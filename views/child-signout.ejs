@@ -1,0 +1,22 @@
+<% include ./partials/header.ejs %>
+
+<h1 class="text-center"><%= title %></h1>
+<div class="col-md-12" >
+  <div id="logbox"  >
+    <form id="signup" method="post"  >
+    <div class="block">
+      <input type="text" class="form-control  input pass" placeholder="First name" aria-describedby="basic-addon1" required>
+    </div>
+    <br/>
+    <div class="block">
+      <input type="text" class="form-control  input pass" placeholder="Last name" aria-describedby="basic-addon1" required>
+    </div>
+
+  <button id="success" data-toggle="modal" data-target="#myModal"  class="inputButton" role="button" class="btn btn-primary">Sign Out Child</button>
+  <br>
+  <a href="/">Return to homepage</a>
+    </form></div></div>
+
+<% include ./partials/child-out-successModal.ejs %>
+
+<% include ./partials/footer.ejs %>
